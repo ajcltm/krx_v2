@@ -1,8 +1,11 @@
 from typing import Dict
 import requests
 
+from webScrap_v2 import util
+
 class Request_price:
 
+    @util.randomSleep
     def request(self, work:Dict):
         trdDd = work.get('trdDd')
 

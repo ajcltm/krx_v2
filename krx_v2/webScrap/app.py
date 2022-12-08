@@ -13,3 +13,6 @@ class Scraper:
         dir_ = Path.home().joinpath('Desktop', 'krx')
         s = apps.FSScraper(IWorkingList=wl, IRequester=rq, save_path=dir_)
         s.execute()
+
+if __name__ == '__main__':
+    Scraper().execute()

@@ -1,4 +1,4 @@
-from webScrap_v2 import work
+from webScrap_v2 import work, util
 import datetime
 
 
@@ -17,5 +17,5 @@ class WorkingList:
         return dayList
 
     def get_working_list(self):
-        dayList = self.get_day_list(start = '20220101')
+        dayList = self.get_day_list(start = '19950501')
         return [work.Work(work={'trdDd':day}) for day in dayList]
